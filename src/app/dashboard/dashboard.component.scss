@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    grid-auto-flow: row;
+    max-width: 1920px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} 
+.item{
+    padding: 20px 20px 20px;
+}
+.header{
+    height: 70px;
+    width: 100%;
+    font-size: 50px;
+    text-align: left;
+    padding: 20px;
+    background: #4e9a9a;
+    box-shadow:  14px 14px 28px #499191,
+                 -14px -14px 28px #53a3a3;
+}

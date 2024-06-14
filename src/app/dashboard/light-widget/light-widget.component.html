@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-card-title>Lights</mat-card-title>
+  <mat-card-content class="demo-basic-list">
+    <mat-grid-list [cols]="1" gutterSize="10px" rowHeight="100px">
+      <mat-grid-tile [colspan]="1" [rowspan]="1" class="mat-elevation-z15">
+        <button>
+          <div class="lightheader">Led 1</div>
+        </button>
+        <mat-divider [vertical]="true"></mat-divider>
+        
+        <label>
+          <input type="checkbox" class="toggle-checkbox">
+          <div class="toggle-switch"></div>
+        </label>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="1" class="mat-elevation-z15">
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="1" class="mat-elevation-z15">
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+</mat-card>

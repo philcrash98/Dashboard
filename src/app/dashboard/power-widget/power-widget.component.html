@@ -1,0 +1,34 @@
+<mat-card>
+  <mat-card-title>Power</mat-card-title>
+  <mat-card-content class="demo-basic-list">
+    <mat-grid-list [cols]="2" gutterSize="20px" rowHeight="150px">
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <div class="container">
+          <div>Stromverbrauch:</div>
+          <div>{{power}} W</div>
+        </div>
+        
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <div class="container">
+          <div>Batteriestatus:</div>
+          <div>{{batterystatus}}</div>
+        </div>
+        
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+
+          <div class="container">
+            <div>Batterieladung:</div>
+            <div>{{batterycharge}} %</div>
+          </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <div class="container">
+          <div>Stromverbrauch:</div>
+          <div>{{power}}</div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+</mat-card>
