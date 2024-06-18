@@ -23,10 +23,6 @@ data: any;
     this.batterystatus="nicht vorhanden"
   }
   ngOnInit(): void {
-    this.dataService.getData().subscribe(response => {
-      this.data = response;
-      console.log(this.data);
-    });
   }
 
 
