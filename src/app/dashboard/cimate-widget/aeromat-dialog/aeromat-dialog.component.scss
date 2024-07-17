@@ -1,0 +1,29 @@
+mat-slider {
+    width: 300px;
+    margin: 10px;
+  }
+button{
+    margin: 10px;
+}
+
+.containervertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .containerhorizontal {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  button.highlighted {
+    background-color: yellow;
+    color: black;
+  }
+  mat-slider.highlighted{
+    background-color: yellow;
+    color: black;
+  }

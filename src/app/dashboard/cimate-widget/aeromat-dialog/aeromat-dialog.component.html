@@ -1,0 +1,14 @@
+<div class="containervertical">
+    <header>Aeromat WRT</header>
+    <mat-slider min="1" max="4" step="1" showTickMarks discrete [displayWith]="formatLabel" thumbLabel>
+        <input matSliderThumb value="1">
+    </mat-slider>
+    <div class="containerhorizontal">
+        <mat-button-toggle color="primary" [checked]="autochecked" (change)="autochanged($event)">
+            Auto
+        </mat-button-toggle>
+        <mat-button-toggle color="accent" [checked]="specialchecked" (change)="specialchanged($event)">
+            Spezial
+        </mat-button-toggle>
+    </div>
+</div>
