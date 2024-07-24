@@ -1,0 +1,30 @@
+<div class="containervertical">
+    <header>Klimaanlage</header>
+    <mat-button-toggle color="primary" [checked]="autochecked" (change)="autochanged($event)">
+        OnOff
+    </mat-button-toggle>
+    <div class="containerhorizontal">
+        <div>Mode</div>
+        <mat-slider min="1" max="7" step="1" showTickMarks discrete [displayWith]="formatLabel" thumbLabel>
+            <input matSliderThumb value="1">
+        </mat-slider>
+    </div>
+    <div class="containerhorizontal">
+        <div>Temp</div>
+        <mat-slider min="1" max="7" step="1" showTickMarks discrete [displayWith]="formatLabel" thumbLabel>
+            <input matSliderThumb value="1">
+        </mat-slider>
+    </div>
+    <div class="containerhorizontal">
+        <div>Fan</div>
+        <mat-slider min="1" max="7" step="1" showTickMarks discrete [displayWith]="formatLabel" thumbLabel>
+            <input matSliderThumb value="1">
+        </mat-slider>
+    </div>
+    <div class="containerhorizontal">
+        <div>Direction</div>
+        <mat-slider min="1" max="7" step="1" showTickMarks discrete [displayWith]="formatLabel" thumbLabel>
+            <input matSliderThumb value="1">
+        </mat-slider>
+    </div>
+</div>

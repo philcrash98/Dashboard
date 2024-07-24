@@ -3,10 +3,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
-import { ColorPickerModule } from 'ngx-color-picker';
 import { DataService } from '../data.service';
-import { response } from 'express';
-import { error } from 'console';
+import { ColorPickerModule } from 'nxt-color-picker';
+
 
 @Component({
   selector: 'app-light-widget',
@@ -22,32 +21,34 @@ export class LightWidgetComponent {
   lightStatus: any;
   constructor(private dataService: DataService) {
     this.lightStatus = "off";
-    this.setlight(this.lightStatus)
+    this.ledtoggle("led1")
+    this.ledtoggle("led2")
+    this.ledtoggle("led3")
   }
-  color: any;
-  togglelight() {
+   color = '#2889e9'
+   ledtoggle(led: string) {
     console.log(this.lightStatus)
     if (this.lightStatus == "off") {
-      this.setlight("on");
+      this.senddata("on", led);
       this.lightStatus = "on"
       console.log("on")
-    }else {
-      this.setlight("off");
+    } else {
+      this.senddata("off", led);
       this.lightStatus = "off"
       console.log("off")
     }
-    
+
   }
 
-  setlight(status: string){
+  senddata(status: string, led: string) {
     this.dataService.setminiserver("Lico", status, "Pulse").subscribe(
-      response => {},
+      response => { },
       error => {
         console.error('Error:', error);
       }
     );
   }
- 
-  
+
+
 
 }

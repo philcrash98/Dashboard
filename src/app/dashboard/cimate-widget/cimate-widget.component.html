@@ -1,21 +1,27 @@
-
 <mat-card>
-    <mat-card-title>Climate</mat-card-title>
-    <mat-card-content class="demo-basic-list">
-      <mat-grid-list [cols]="2" gutterSize="20px" rowHeight="150px">
-        <mat-grid-tile [colspan]="1" [rowspan]="1"
-                       class="mat-elevation-z15" (click)="openClimateDialog()">
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="1" [rowspan]="1"
-                       class="mat-elevation-z15" (click)="openClimateDialog()">
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="1" [rowspan]="1"
-                       class="mat-elevation-z15" (click)="openClimateDialog()">
-                       
-        </mat-grid-tile>
-        <mat-grid-tile [colspan]="1" [rowspan]="1"
-                       class="mat-elevation-z15" (click)="openClimateDialog()">
-        </mat-grid-tile>
-      </mat-grid-list>
-    </mat-card-content>
-  </mat-card>
+  <mat-card-title>Climate</mat-card-title>
+  <mat-card-content class="demo-basic-list">
+    <mat-grid-list [cols]="2" gutterSize="20px" rowHeight="150px">
+      <mat-grid-tile [colspan]="1" [rowspan]="1" class="mat-elevation-z15" class="icon-button"
+        (click)="openAeromatDialog()">
+        <mat-icon>mode_fan</mat-icon>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="1" class="mat-elevation-z15" class="icon-button"
+        (click)="openLeafDialog()">
+        <mat-icon>heat_pump</mat-icon>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="1" class="mat-elevation-z15" class="icon-button"
+        (click)="openAirConditionDialog()">
+        <mat-icon>heat_pump</mat-icon>
+
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+
+        <div class="container">
+          <div>Raumtemperatur:</div>
+          <div>{{temperature}} °C</div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+</mat-card>

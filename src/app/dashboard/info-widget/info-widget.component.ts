@@ -11,5 +11,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
   styleUrl: './info-widget.component.scss'
 })
 export class InfoWidgetComponent {
-
+weekday: any;
+date: any;
+today: any;
+constructor(){
+  this.today = Date.now();
+}
 }

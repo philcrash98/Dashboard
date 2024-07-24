@@ -12,4 +12,16 @@ import { MatGridListModule } from '@angular/material/grid-list';
 })
 export class MiscWidgetComponent {
 
+window: any;
+windspeed: any;
+rainsensor: any;
+constructor(){
+  this.window = "geöffnet"
+  this.windspeed = 2.5
+  this.rainsensor = 54
+
+}
+alarmDialog() {
+  throw new Error('Method not implemented.');
+  }
 }
