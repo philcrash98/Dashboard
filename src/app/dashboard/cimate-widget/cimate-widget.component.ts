@@ -33,11 +33,15 @@ openAeromatDialog() {
 }
 openAirConditionDialog() {
   const dialogRef = this.dialog.open(AirconditionDialogComponent, {
-    width: '400px'
+    width: '400px',
+    data: {mode: null, temp: null, fan: null, fandirection: null}
   });
 
   dialogRef.afterClosed().subscribe(result => {
-    console.log('Der Dialog wurde geschlossen');
+    if(result){
+      console.log(result);
+    }
+    
   });
 }
 openLeafDialog() {
