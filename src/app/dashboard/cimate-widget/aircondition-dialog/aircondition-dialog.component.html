@@ -1,30 +1,31 @@
 <div class="containervertical">
-    <header>Klimaanlage</header>
-    <mat-button-toggle color="primary" [checked]="autochecked">
-        OnOff
-    </mat-button-toggle>
+    <header><h2>Klimaanlage</h2></header>
+    <p><mat-slide-toggle labelPosition="before" [(ngModel)]="actoggle" (ngModelChange)="acchange()" >Aus/An</mat-slide-toggle></p>
     <div class="containerhorizontal">
-        <div>Mode</div>
-        <mat-slider min="1" max="7" step="1" showTickMarks discrete [displayWith]="modeLabel" thumbLabel>
-            <input matSliderThumb value="1">
+        
+        <button mat-mini-fab (click)="deccounter()"><mat-icon>remove</mat-icon></button>
+        <h1>{{targettemp}}</h1>
+        <button mat-mini-fab (click)="inccounter()"><mat-icon>add</mat-icon></button>
+    </div>
+    <mat-button-toggle-group name="fontStyle" [(ngModel)]="mode" (ngModelChange)="modechange()">
+        <mat-button-toggle value="1">Kühlen</mat-button-toggle>
+        <mat-button-toggle value="2">Lüften</mat-button-toggle>
+        <mat-button-toggle value="3">Eco</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <div class="containerhorizontal">
+        <p>Lüfterstufe</p>
+        <mat-slider min="1" max="5" step="1" showTickMarks discrete (input)="fanchange()">
+            <input matSliderThumb  [(ngModel)]="fan">
         </mat-slider>
     </div>
     <div class="containerhorizontal">
-        <div>Temp</div>
-        <mat-slider min="16" max="25" step="1" showTickMarks discrete [displayWith]="tempLabel" thumbLabel>
-            <input matSliderThumb value="1">
+        <p>Lüfterrichtung</p>
+        <mat-slider min="1" max="5" step="1" showTickMarks discrete  (input)="fandirchange()">
+            <input matSliderThumb [(ngModel)]="fanDir">
         </mat-slider>
     </div>
-    <div class="containerhorizontal">
-        <div>Fan</div>
-        <mat-slider min="1" max="7" step="1" showTickMarks discrete [displayWith]="fanLabel" thumbLabel>
-            <input matSliderThumb value="1">
-        </mat-slider>
-    </div>
-    <div class="containerhorizontal">
-        <div>Direction</div>
-        <mat-slider min="1" max="7" step="1" showTickMarks discrete [displayWith]="fandirectionLabel" thumbLabel>
-            <input matSliderThumb value="1">
-        </mat-slider>
-    </div>
+
+
+
 </div>

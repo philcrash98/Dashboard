@@ -1,5 +1,6 @@
 <div class="containervertical">
-    <header><div class="containerhorizontal">Leaf<button mat-raised-button  (click)="leafonoff()">OnOff</button></div></header>
+    <header>Leaf</header>
+    <p><mat-slide-toggle labelPosition="before" [(ngModel)]="leaftoggle" (ngModelChange)="leafchange()" >Aus/An</mat-slide-toggle></p>
     <div class="containerhorizontal">
         <button mat-raised-button (click)="leafbutton = 0">+</button>
         <button mat-raised-button (click)="leafbutton = 1">-</button>

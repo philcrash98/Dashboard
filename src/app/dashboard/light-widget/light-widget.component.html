@@ -1,18 +1,53 @@
 <mat-card>
-  <mat-card-title>Lights</mat-card-title>
+  <mat-card-title>Lichter
+    <mat-slide-toggle class="headertoggle" [(ngModel)]="disabled" (ngModelChange)="toggleChangeEvent($event, 'ngModelChange', 3)"></mat-slide-toggle>
+  </mat-card-title>
+  
   <mat-card-content class="demo-basic-list">
-    <mat-grid-list [cols]="2" gutterSize="20px" rowHeight="150px">
-      <mat-grid-tile [colspan]="1" [rowspan]="1">
-        Led 1
-      </mat-grid-tile>
-      <mat-grid-tile [colspan]="1" [rowspan]="1" class="mat-elevation-z15" (click)="ledtoggle('led1')">
-        Led 2
-      </mat-grid-tile>
-      <mat-grid-tile [colspan]="1" [rowspan]="1" class="mat-elevation-z15" (click)="ledtoggle('led2')">
-        Led 3
-      </mat-grid-tile>
-      <mat-grid-tile [colspan]="1" [rowspan]="1" class="mat-elevation-z15" (click)="ledtoggle('led3')">
-      </mat-grid-tile>
-    </mat-grid-list>
+    <mat-list>
+      <div class="containerhorizontal">
+        <mat-list-item>
+          <h4>Led 1</h4>
+        </mat-list-item>
+        <mat-slide-toggle [(ngModel)]="led0State" (ngModelChange)="toggleChangeEvent($event, 'ngModelChange', 0)" [disabled]="disabled"></mat-slide-toggle>
+        <ngx-colors ngx-colors-trigger [(ngModel)]="led0Color" (ngModelChange)="colorChangeEvent($event, 'ngModelChange', 0)"></ngx-colors>
+      </div>
+
+      <mat-divider></mat-divider>
+      <div class="containerhorizontal">
+        <mat-list-item>
+          <h4>Led 2</h4>
+        </mat-list-item>
+        <mat-slide-toggle [(ngModel)]="led1State" (ngModelChange)="toggleChangeEvent($event, 'ngModelChange', 1)" [disabled]="disabled"></mat-slide-toggle>
+        <ngx-colors ngx-colors-trigger [(ngModel)]="led1Color" (ngModelChange)="colorChangeEvent($event, 'ngModelChange', 1)"></ngx-colors>
+      </div>
+
+      <mat-divider></mat-divider>
+      <div class="containerhorizontal">
+        <mat-list-item>
+          <h4>Led 3</h4>
+        </mat-list-item>
+        <mat-slide-toggle [(ngModel)]="led2State" (ngModelChange)="toggleChangeEvent($event, 'ngModelChange', 2)" [disabled]="disabled"></mat-slide-toggle>
+        <ngx-colors ngx-colors-trigger [(ngModel)]="led2Color" (ngModelChange)="colorChangeEvent($event, 'ngModelChange', 2)"></ngx-colors>
+      </div>
+    </mat-list>
+    <mat-divider></mat-divider>
+    <div class="containerhorizontal">
+      <button mat-fab extended>
+        <mat-icon>add</mat-icon>
+        Mode
+      </button>
+      <div>
+        {{Mode}}
+      </div>
+      <button mat-fab extended >
+        <mat-icon>remove</mat-icon>
+        Mode
+      </button>
+      <button mat-fab extended>
+        <mat-icon>warning</mat-icon>
+        Alarm
+      </button>
+    </div>
   </mat-card-content>
 </mat-card>

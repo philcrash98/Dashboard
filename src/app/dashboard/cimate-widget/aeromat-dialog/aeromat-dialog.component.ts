@@ -4,58 +4,37 @@ import { MatSliderChange, MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import { eventNames } from 'process';
 import { MatButtonToggleChange, MatButtonToggleModule } from '@angular/material/button-toggle';
+import { FormsModule } from '@angular/forms';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { DataService } from '../../data.service';
 
 @Component({
   selector: 'app-aeromat-dialog',
   standalone: true,
-  imports: [MatSliderModule, MatButtonModule, MatButtonToggleModule],
+  imports: [MatSliderModule, MatButtonModule, MatButtonToggleModule, FormsModule, MatSlideToggleModule],
   templateUrl: './aeromat-dialog.component.html',
   styleUrl: './aeromat-dialog.component.scss',
-  styles: [`
-    :host {
-      display: block;
-      background: #FFF;
-      border-radius: 8px;
-      padding: 16px;
-    }
-  `]
+  styles: []
 })
 export class AeromatDialogComponent {
-
-  slidervalue: number;
-  autochecked: boolean = false;
-  specialchecked: boolean = false;
-
-  constructor(public dialogRef: MatDialogRef<AeromatDialogComponent>) {
-    this.slidervalue = 0;
+  mode: any;
+  constructor(public dialogRef: MatDialogRef<AeromatDialogComponent>, private dataService: DataService) {
+    this.mode = "1";
+  }
+  modechange() {
+    //console.log(this.mode)
+    this.sendData("Pb", this.mode)
+  }
+  sendData(status: string, value: string) {
+    this.dataService.setstate("ACc", status, value).subscribe(
+      response => { },
+      error => {
+        console.error('Error:', error);
+      }
+    );
+  }
+  getData() {
+    this.dataService.getstate("")
   }
 
-  onNoClick(): void {
-    this.dialogRef.close();
-  }
-
-  formatLabel(value: number): string {
-    this.slidervalue = value;
-    console.log("Slider " + value);
-    this.autochecked = false;
-    this.specialchecked = false;
-    console.log(this.autochecked + "   " + this.specialchecked);
-    return `${this.slidervalue}`;
-  }
-
-  specialchanged(event: MatButtonToggleChange): void {
-    this.slidervalue = 5;
-    this.specialchecked = true;
-    this.autochecked = false;
-    console.log("Special " + this.slidervalue);
-    console.log(this.autochecked + "   " + this.specialchecked);
-  }
-
-  autochanged(event: MatButtonToggleChange): void {
-    this.slidervalue = 6;
-    this.specialchecked = false;
-    this.autochecked = true;
-    console.log("Auto " + this.slidervalue);
-    console.log(this.autochecked + "   " + this.specialchecked);
-  }
 }

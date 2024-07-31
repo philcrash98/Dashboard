@@ -1,29 +1,36 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { DataService } from '../../data.service';
 
 @Component({
   selector: 'app-leaf-dialog',
   standalone: true,
-  imports: [MatButtonModule],
+  imports: [MatButtonModule, MatSlideToggleModule, FormsModule],
   templateUrl: './leaf-dialog.component.html',
   styleUrl: './leaf-dialog.component.scss'
 })
 export class LeafDialogComponent {
 
+
   leafbutton: number;
   leaf: boolean;
+  leaftoggle: any;
 
-  constructor(){
+  constructor(private dataService: DataService) {
     this.leafbutton = 0;
     this.leaf = false;
   }
-  leafonoff() {
-    if(this.leaf == false){
-      this.leaf = true;
-
-    } else {
-      this.leaf = false;
-    }
-    //console.log(this.leaf)
-    }
+  leafchange() {
+    throw new Error('Method not implemented.');
+  }
+  sendData(status: string, value: string) {
+    this.dataService.setstate("ACc", status, value).subscribe(
+      response => { },
+      error => {
+        console.error('Error:', error);
+      }
+    );
+  }
 }

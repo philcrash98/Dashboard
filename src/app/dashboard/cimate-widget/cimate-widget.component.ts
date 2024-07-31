@@ -52,7 +52,7 @@ export class CimateWidgetComponent {
     });
   }
   getData(uuid: string) {
-    this.dataService.getstateminiserver(uuid).subscribe(
+    this.dataService.getstate(uuid).subscribe(
       response => {const obj = JSON.parse(JSON.stringify(response));
        this.temperature = obj.LL.value
        },
