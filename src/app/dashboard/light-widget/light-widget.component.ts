@@ -143,7 +143,7 @@ export class LightWidgetComponent {
     else{
       this.Mode = 99;
     }
-    this.senddata("Lico","mode", this.Mode.toString())
+    this.senddata("Lico","M-", "Pulse")
 
   }
   inccounter() {
@@ -153,7 +153,7 @@ export class LightWidgetComponent {
     else{
       this.Mode = 0;
     }
-    this.senddata("Lico","mode", this.Mode.toString())
+    this.senddata("Lico","M+","Pulse")
 
 
   }
