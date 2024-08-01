@@ -3,7 +3,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import Highcharts from 'highcharts';
 import { HighchartsChartModule } from 'highcharts-angular';
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-stats-widget',
@@ -14,7 +14,11 @@ import {MatTabsModule} from '@angular/material/tabs';
   styleUrl: './stats-widget.component.scss'
 })
 export class StatsWidgetComponent {
-  Highcharts: typeof Highcharts = Highcharts;
+  Highcharts: typeof Highcharts = Highcharts; // required
+  chartConstructor: string = 'chart'; // optional string, defaults to 'chart'
+  updateFlag: boolean = false; // optional boolean
+  oneToOneFlag: boolean = true; // optional boolean, defaults to false
+  runOutsideAngular: boolean = false; // optional boolean, defaults to false
   chartOptions: Highcharts.Options = {
     series: [{
       data: [1, 2, 3],
