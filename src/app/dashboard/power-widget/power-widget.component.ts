@@ -27,23 +27,21 @@ data: any;
     // zeit verbleibend 1d30f62a-02b0-7f1c-ffff9fe4991c2210
     //this.getData("1d30f62a-02b0-7f1f-01ff9fe4991c2210")
     this.dataService.getstate("1d30f62a-02b0-7f1f-01ff9fe4991c2210")
+  this.dataService.getstate("1d4630d3-00a4-4c75-ffffed57184a04d2")
+  this.getdata()
   }
   ngOnInit(): void {
   }
-
-
-
-  /* async getData(uuid: string){
-    let rvalue = 0;
-    try {
-      const response = await this.dataService.getstate(uuid).toPromise();
-      const obj = JSON.parse(JSON.stringify(response));
-      rvalue = obj.LL.value
-      console.log(rvalue)
-    } catch (error) {
-      console.error('Error:', error);
-    }
-  } */
+  getdata(){
+    this.dataService.getstate("1d4630d3-00a4-4c75-ffffed57184a04d2").subscribe(
+      response => {console.log(response.json()) }
+      ,
+      error => {
+        console.error('Error:', error);
+      }
+    );
+  }
+  
 
 
 }

@@ -10,7 +10,7 @@
           <h4>Led 1</h4>
         </mat-list-item>
         <mat-slide-toggle [(ngModel)]="led0State" (ngModelChange)="toggleChangeEvent($event, 'ngModelChange', 0)" [disabled]="disabled"></mat-slide-toggle>
-        <ngx-colors ngx-colors-trigger [(ngModel)]="led0Color" (ngModelChange)="colorChangeEvent($event, 'ngModelChange', 0)"></ngx-colors>
+        <ngx-colors ngx-colors-trigger [format] = "'hsla'" [(ngModel)]="led0Color" (ngModelChange)="colorChangeEvent($event, 'ngModelChange', 0)"></ngx-colors>
       </div>
 
       <mat-divider></mat-divider>
@@ -19,7 +19,7 @@
           <h4>Led 2</h4>
         </mat-list-item>
         <mat-slide-toggle [(ngModel)]="led1State" (ngModelChange)="toggleChangeEvent($event, 'ngModelChange', 1)" [disabled]="disabled"></mat-slide-toggle>
-        <ngx-colors ngx-colors-trigger [(ngModel)]="led1Color" (ngModelChange)="colorChangeEvent($event, 'ngModelChange', 1)"></ngx-colors>
+        <ngx-colors ngx-colors-trigger [format] = "'hsla'" [(ngModel)]="led1Color" (ngModelChange)="colorChangeEvent($event, 'ngModelChange', 1)"></ngx-colors>
       </div>
 
       <mat-divider></mat-divider>
@@ -28,7 +28,7 @@
           <h4>Led 3</h4>
         </mat-list-item>
         <mat-slide-toggle [(ngModel)]="led2State" (ngModelChange)="toggleChangeEvent($event, 'ngModelChange', 2)" [disabled]="disabled"></mat-slide-toggle>
-        <ngx-colors ngx-colors-trigger [(ngModel)]="led2Color" (ngModelChange)="colorChangeEvent($event, 'ngModelChange', 2)"></ngx-colors>
+        <ngx-colors ngx-colors-trigger [format] = "'hsla'" [(ngModel)]="led2Color" (ngModelChange)="colorChangeEvent($event, 'ngModelChange', 2)"></ngx-colors>
       </div>
     </mat-list>
     <mat-divider></mat-divider>

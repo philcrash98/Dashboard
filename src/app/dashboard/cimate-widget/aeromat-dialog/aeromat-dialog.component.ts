@@ -26,7 +26,7 @@ export class AeromatDialogComponent {
     this.sendData("Pb", this.mode)
   }
   sendData(status: string, value: string) {
-    this.dataService.setstate("ACc", status, value).subscribe(
+    this.dataService.setstate("ACc", status, value, "APIControl").subscribe(
       response => { },
       error => {
         console.error('Error:', error);

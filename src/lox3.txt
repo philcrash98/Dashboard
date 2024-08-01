@@ -1,12 +1,12 @@
 {
-    "lastModified": "2024-07-09 13:26:40",
+    "lastModified": "2024-08-03 11:06:27",
     "msInfo": {
         "serialNr": "504F94A1FDA5",
         "msName": "Loxone Miniserver",
         "projectName": "Smart Home Demonstrator",
         "localUrl": "MSFDA5",
         "remoteUrl": "dns.loxonecloud.com/504F94A1FDA5",
-        "hostname": "$$hostname",
+        "hostname": "MSFDA5.fritz.box",
         "tempUnit": 0,
         "currency": "€",
         "squareMeasure": "m²",
@@ -24,11 +24,11 @@
         "miniserverType": 2,
         "deviceMonitor": "15ea0aa4-0213-3a38-ffffed57184a04d2",
         "currentUser": {
-            "name": "$$username",
-            "uuid": "$$useruuid",
-            "isAdmin": "$$isAdmin",
-            "changePassword": "$$changePwd",
-            "userRights": "$$userRights"
+            "name": "admin",
+            "uuid": "15ea0aa5-0112-3b9c-ffffed57184a04d2",
+            "isAdmin": true,
+            "changePassword": true,
+            "userRights": 4294967295
         }
     },
     "globalStates": {
@@ -671,81 +671,81 @@
         }
     },
     "modes": {
-        "U:00000000-0000-0001-1500000000000000": {
+        "00000000-0000-0001-1500000000000000": {
             "id": 0,
             "name": "Feiertag"
         },
-        "U:00000000-0000-0002-1500000000000000": {
+        "00000000-0000-0002-1500000000000000": {
             "id": 1,
             "name": "Urlaub"
         },
-        "U:00000000-0000-0003-1500000000000000": {
+        "00000000-0000-0003-1500000000000000": {
             "id": 2,
             "name": "Freier Tag/Schulferien"
         },
-        "U:00000000-0000-0004-1500000000000000": {
+        "00000000-0000-0004-1500000000000000": {
             "id": 3,
             "name": "Montag"
         },
-        "U:00000000-0000-0005-1500000000000000": {
+        "00000000-0000-0005-1500000000000000": {
             "id": 4,
             "name": "Dienstag"
         },
-        "U:00000000-0000-0006-1500000000000000": {
+        "00000000-0000-0006-1500000000000000": {
             "id": 5,
             "name": "Mittwoch"
         },
-        "U:00000000-0000-0007-1500000000000000": {
+        "00000000-0000-0007-1500000000000000": {
             "id": 6,
             "name": "Donnerstag"
         },
-        "U:00000000-0000-0008-1500000000000000": {
+        "00000000-0000-0008-1500000000000000": {
             "id": 7,
             "name": "Freitag"
         },
-        "U:00000000-0000-0009-1500000000000000": {
+        "00000000-0000-0009-1500000000000000": {
             "id": 8,
             "name": "Samstag"
         },
-        "U:00000000-0000-000a-1500000000000000": {
+        "00000000-0000-000a-1500000000000000": {
             "id": 9,
             "name": "Sonntag"
         },
-        "U:00000000-0000-000b-1500000000000000": {
+        "00000000-0000-000b-1500000000000000": {
             "id": 10,
             "name": "Heizperiode"
         },
-        "U:00000000-0000-000c-1500000000000000": {
+        "00000000-0000-000c-1500000000000000": {
             "id": 11,
             "name": "Kühlperiode"
         },
-        "U:15ea0aa5-00a9-3b62-ffffed57184a04d2": {
+        "15ea0aa5-00a9-3b62-ffffed57184a04d2": {
             "id": -1,
             "name": "Alarm"
         },
-        "U:15ea0aa5-00b3-3b66-ffffed57184a04d2": {
+        "15ea0aa5-00b3-3b66-ffffed57184a04d2": {
             "id": -2,
             "name": "Anwesenheitssimulation"
         },
-        "U:15ea0aa5-00c0-3b6a-ffffed57184a04d2": {
+        "15ea0aa5-00c0-3b6a-ffffed57184a04d2": {
             "id": -3,
             "name": "Haus im Tiefschlaf"
         },
-        "U:15ea0aa5-00ce-3b6e-ffffed57184a04d2": {
+        "15ea0aa5-00ce-3b6e-ffffed57184a04d2": {
             "id": -4,
             "name": "Erhöhter Wärmebedarf"
         },
-        "U:15ea0aa5-00d7-3b72-ffffed57184a04d2": {
+        "15ea0aa5-00d7-3b72-ffffed57184a04d2": {
             "id": -5,
             "name": "Party"
         },
-        "U:15ea0aa5-00e6-3b76-ffffed57184a04d2": {
+        "15ea0aa5-00e6-3b76-ffffed57184a04d2": {
             "id": -6,
             "name": "Abwesend"
         }
     },
     "controls": {
-        "U:1d31011d-014a-2e3d-ffffed57184a04d2": {
+        "1d31011d-014a-2e3d-ffffed57184a04d2": {
             "name": "Schalter",
             "type": "Pushbutton",
             "uuidAction": "1d31011d-014a-2e3d-ffffed57184a04d2",
@@ -765,7 +765,7 @@
                 "lockedOn": "1d31011d-014a-2e33-ffffb2649f684cd5"
             }
         },
-        "U:1d310d3f-01f7-d5d4-ffffed57184a04d2": {
+        "1d310d3f-01f7-d5d4-ffffed57184a04d2": {
             "name": "Taster",
             "type": "Pushbutton",
             "uuidAction": "1d310d3f-01f7-d5d4-ffffed57184a04d2",
@@ -784,10 +784,10 @@
                 "active": "1d310d3f-01f7-d5d2-05fff266be4cd0ed"
             }
         },
-        "U:1ceb0644-003a-c9b6-ffffed57184a04d2": {
-            "name": "Lampen AUS",
+        "1d50f702-01a3-7fe7-ffffed57184a04d2": {
+            "name": "LED1",
             "type": "Switch",
-            "uuidAction": "1ceb0644-003a-c9b6-ffffed57184a04d2",
+            "uuidAction": "1d50f702-01a3-7fe7-ffffed57184a04d2",
             "room": "15ea0aa5-0122-3bad-ffffed57184a04d2",
             "cat": "15ea0aa4-0244-3a4a-ffffed57184a04d2",
             "defaultRating": 0,
@@ -796,162 +796,18 @@
             "defaultIcon": null,
             "restrictions": 0,
             "details": {
-                "jLockable": false,
-                "type": 71
+                "jLockable": true
             },
             "states": {
-                "active": "1ceb0644-003a-c9b6-ffffed57184a04d2"
+                "jLocked": "9d50f702-01a3-7fdf-01ff10ea693898fb",
+                "active": "1d50f702-01a3-7fe3-05ff10ea693898fb",
+                "lockedOn": "1d50f702-01a3-7fdd-ffff10ea693898fb"
             }
         },
-        "U:1c5b743e-0398-4c3c-ffffed57184a04d2": {
-            "name": "Lichtsteuerung",
-            "type": "LightControllerV2",
-            "uuidAction": "1c5b743e-0398-4c3c-ffffed57184a04d2",
-            "room": "15ea0aa5-0122-3bad-ffffed57184a04d2",
-            "cat": "15ea0aa4-0244-3a4a-ffffed57184a04d2",
-            "defaultRating": 1,
-            "isFavorite": false,
-            "isSecured": false,
-            "presence": true,
-            "restrictions": 0,
-            "details": {
-                "jLockable": true,
-                "controlHistory": true,
-                "hasHistory": 20,
-                "movementScene": 1,
-                "masterValue": "1c5b743e-0398-4c3c-ffffed57184a04d2/masterValue",
-                "masterColor": "1c5b743e-0398-4c3c-ffffed57184a04d2/masterColor"
-            },
-            "states": {
-                "jLocked": "9c5b743e-0398-4bfc-07ffc50161f55067",
-                "activeMoods": "1c5b743e-0398-4bc3-ffffc50161f55067",
-                "moodList": "1c5b743e-0398-4bc4-ffffc50161f55067",
-                "activeMoodsNum": "1c5b743e-0398-4bcb-ffffc50161f55067",
-                "favoriteMoods": "1c5b743e-0398-4bc5-ffffc50161f55067",
-                "additionalMoods": "1c5b743e-0398-4bc6-ffffc50161f55067",
-                "circuitNames": "1c5b743e-0398-4bca-ffffc50161f55067",
-                "daylightConfig": "1c5b743e-0398-4bcc-ffffc50161f55067",
-                "presenceFrom": "1c5b743e-0398-4bc1-ffffc50161f55067",
-                "presenceTo": "1c5b743e-0398-4bc2-ffffc50161f55067"
-            },
-            "subControls": {
-                "1c5b743e-0398-4c3c-ffffed57184a04d2/masterValue": {
-                    "name": "Master-Helligkeit",
-                    "type": "Dimmer",
-                    "uuidAction": "1c5b743e-0398-4c3c-ffffed57184a04d2/masterValue",
-                    "defaultRating": 0,
-                    "isFavorite": false,
-                    "isSecured": false,
-                    "presence": true,
-                    "restrictions": 0,
-                    "states": {
-                        "position": "1c5b743e-0398-4c37-42ffc50161f55067",
-                        "min": "1c5b743e-0398-4bc8-ffffc50161f55067",
-                        "max": "1c5b743e-0398-4bc9-ffffc50161f55067",
-                        "step": "1c5b743e-0398-4c11-1cffc50161f55067"
-                    }
-                },
-                "1c5b743e-0398-4c3c-ffffed57184a04d2/masterColor": {
-                    "name": "Master-Farbe",
-                    "type": "ColorPickerV2",
-                    "uuidAction": "1c5b743e-0398-4c3c-ffffed57184a04d2/masterColor",
-                    "defaultRating": 0,
-                    "isFavorite": false,
-                    "isSecured": false,
-                    "presence": true,
-                    "restrictions": 0,
-                    "details": {
-                        "pickerType": "Rgb"
-                    },
-                    "states": {
-                        "color": "1c5b743e-0398-4c36-41ffc50161f55067",
-                        "sequence": "1c5b9b6d-03a4-c2c2-ffff8772cae9c18c",
-                        "sequenceColorIdx": "1c5b9b6d-03a5-c2d6-ffff8772cae9c18c"
-                    }
-                },
-                "1c5b743e-0398-4c3c-ffffed57184a04d2/AI1": {
-                    "name": "LED 1",
-                    "type": "ColorPickerV2",
-                    "uuidAction": "1c5b743e-0398-4c3c-ffffed57184a04d2/AI1",
-                    "defaultRating": 0,
-                    "isFavorite": false,
-                    "isSecured": false,
-                    "presence": true,
-                    "restrictions": 0,
-                    "details": {
-                        "pickerType": "Rgb"
-                    },
-                    "states": {
-                        "color": "1c5b743e-0398-4c24-2fffc50161f55067",
-                        "sequence": "1c5b9b6d-03a4-c2b0-ffff8772cae9c18c",
-                        "sequenceColorIdx": "1c5b9b6d-03a4-c2c4-ffff8772cae9c18c"
-                    }
-                },
-                "1c5b743e-0398-4c3c-ffffed57184a04d2/AI2": {
-                    "name": "LED 2",
-                    "type": "ColorPickerV2",
-                    "uuidAction": "1c5b743e-0398-4c3c-ffffed57184a04d2/AI2",
-                    "defaultRating": 0,
-                    "isFavorite": false,
-                    "isSecured": false,
-                    "presence": true,
-                    "restrictions": 0,
-                    "details": {
-                        "pickerType": "Rgb"
-                    },
-                    "states": {
-                        "color": "1c5b743e-0398-4c25-30ffc50161f55067",
-                        "sequence": "1c5b9b6d-03a4-c2b1-ffff8772cae9c18c",
-                        "sequenceColorIdx": "1c5b9b6d-03a4-c2c5-ffff8772cae9c18c"
-                    }
-                },
-                "1c5b743e-0398-4c3c-ffffed57184a04d2/AI3": {
-                    "name": "LED 3",
-                    "type": "ColorPickerV2",
-                    "uuidAction": "1c5b743e-0398-4c3c-ffffed57184a04d2/AI3",
-                    "defaultRating": 0,
-                    "isFavorite": false,
-                    "isSecured": false,
-                    "presence": true,
-                    "restrictions": 0,
-                    "details": {
-                        "pickerType": "Rgb"
-                    },
-                    "states": {
-                        "color": "1c5b743e-0398-4c26-31ffc50161f55067",
-                        "sequence": "1c5b9b6d-03a4-c2b2-ffff8772cae9c18c",
-                        "sequenceColorIdx": "1c5b9b6d-03a4-c2c6-ffff8772cae9c18c"
-                    }
-                }
-            }
-        },
-        "U:1ceb08a2-0229-2aed-ffffed57184a04d2": {
-            "name": "RGB-Lichtszene",
-            "type": "LightsceneRGB",
-            "uuidAction": "1ceb08a2-0229-2aed-ffffed57184a04d2",
-            "room": "15ea0aa5-0122-3bad-ffffed57184a04d2",
-            "cat": "15ea0aa4-0244-3a4a-ffffed57184a04d2",
-            "defaultRating": 0,
-            "isFavorite": false,
-            "isSecured": false,
-            "restrictions": 0,
-            "details": {
-                "jLockable": true,
-                "sceneList": {}
-            },
-            "states": {
-                "jLocked": "9ceb08a2-0229-2ae4-05ff4cd81f7b0015",
-                "activeScene": "1ceb08a2-0229-2aea-0bff4cd81f7b0015",
-                "red": "1ceb08a2-0229-2ae7-08ff4cd81f7b0015",
-                "green": "1ceb08a2-0229-2ae8-09ff4cd81f7b0015",
-                "blue": "1ceb08a2-0229-2ae9-0aff4cd81f7b0015",
-                "color": "1ceb08a2-0229-2aeb-0cff4cd81f7b0015"
-            }
-        },
-        "U:1ceb08c9-00f7-3a9c-ffffed57184a04d2": {
-            "name": "RGBTest",
-            "type": "Slider",
-            "uuidAction": "1ceb08c9-00f7-3a9c-ffffed57184a04d2",
+        "1d50f72b-00d3-bc5a-ffffd459b8035c52": {
+            "name": "LED2",
+            "type": "Switch",
+            "uuidAction": "1d50f72b-00d3-bc5a-ffffd459b8035c52",
             "room": "15ea0aa5-0122-3bad-ffffed57184a04d2",
             "cat": "15ea0aa4-0244-3a4a-ffffed57184a04d2",
             "defaultRating": 0,
@@ -960,18 +816,35 @@
             "defaultIcon": null,
             "restrictions": 0,
             "details": {
-                "jLockable": false,
-                "format": "<v.c>",
-                "min": 0,
-                "max": 100,
-                "step": 1
+                "jLockable": true
             },
             "states": {
-                "value": "1ceb08c9-00f7-3a9c-ffffed57184a04d2",
-                "error": "1ceb08c9-00f7-3a9b-01ffc303e64736a4"
+                "jLocked": "9d50f72b-00d3-bc5c-ffffd459b8035c52",
+                "active": "1d50f72b-00d3-bc60-ffffd459b8035c52",
+                "lockedOn": "1d50f72b-00d3-bc66-ffffd459b8035c52"
             }
         },
-        "U:1c5b7014-03a3-f9f8-ffffed57184a04d2": {
+        "1d50f729-0130-a867-ffffb2e854153655": {
+            "name": "LED3",
+            "type": "Switch",
+            "uuidAction": "1d50f729-0130-a867-ffffb2e854153655",
+            "room": "15ea0aa5-0122-3bad-ffffed57184a04d2",
+            "cat": "15ea0aa4-0244-3a4a-ffffed57184a04d2",
+            "defaultRating": 0,
+            "isFavorite": false,
+            "isSecured": false,
+            "defaultIcon": null,
+            "restrictions": 0,
+            "details": {
+                "jLockable": true
+            },
+            "states": {
+                "jLocked": "9d50f729-0130-a869-ffffb2e854153655",
+                "active": "1d50f729-0130-a86d-ffffb2e854153655",
+                "lockedOn": "1d50f729-0130-a873-ffffb2e854153655"
+            }
+        },
+        "1c5b7014-03a3-f9f8-ffffed57184a04d2": {
             "name": "Batterie Test",
             "type": "InfoOnlyDigital",
             "uuidAction": "1c5b7014-03a3-f9f8-ffffed57184a04d2",
@@ -997,7 +870,7 @@
                 "active": "1c5b7014-03a3-f9f8-ffffed57184a04d2"
             }
         },
-        "U:1d31094a-0088-227d-ffffed57184a04d2": {
+        "1d31094a-0088-227d-ffffed57184a04d2": {
             "name": "Energiemanager",
             "type": "EnergyManager2",
             "uuidAction": "1d31094a-0088-227d-ffffed57184a04d2",
@@ -1029,7 +902,7 @@
                 "loads": "1d31094a-0088-2257-fffff04d78a4c94c"
             }
         },
-        "U:1d30f62a-02b0-7f34-ffffed57184a04d2": {
+        "1d30f62a-02b0-7f34-ffffed57184a04d2": {
             "name": "Power Supply & Backup",
             "type": "PowerUnit",
             "uuidAction": "1d30f62a-02b0-7f34-ffffed57184a04d2",
@@ -1087,7 +960,7 @@
                         "entries": "1d30f62a-02b0-7f16-ffff9fe4991c2210"
                     }
                 },
-                "U:1d30f62a-034e-8386-ffff1e5817017e47": {
+                "1d30f62a-034e-8386-ffff1e5817017e47": {
                     "name": "Loxone",
                     "type": "Meter",
                     "uuidAction": "1d30f62a-034e-8386-ffff1e5817017e47",
@@ -1116,7 +989,7 @@
                         "totalYear": "1d30f62a-034e-8393-0cff1e5817017e47"
                     }
                 },
-                "U:1d30f62a-034e-8397-ffff1e5817017e47": {
+                "1d30f62a-034e-8397-ffff1e5817017e47": {
                     "name": "Lampen",
                     "type": "Meter",
                     "uuidAction": "1d30f62a-034e-8397-ffff1e5817017e47",
@@ -1145,7 +1018,7 @@
                         "totalYear": "1d30f62a-034e-83a4-0cff1e5817017e47"
                     }
                 },
-                "U:1d30f62a-034e-83a8-ffff1e5817017e47": {
+                "1d30f62a-034e-83a8-ffff1e5817017e47": {
                     "name": "Power Supply & Backup-Total",
                     "type": "Meter",
                     "uuidAction": "1d30f62a-034e-83a8-ffff1e5817017e47",
@@ -1176,7 +1049,7 @@
                 }
             }
         },
-        "U:1c5b7014-03a3-f9dc-ffffed57184a04d2": {
+        "1c5b7014-03a3-f9dc-ffffed57184a04d2": {
             "name": "Sicherung 1",
             "type": "InfoOnlyDigital",
             "uuidAction": "1c5b7014-03a3-f9dc-ffffed57184a04d2",
@@ -1202,7 +1075,7 @@
                 "active": "1c5b7014-03a3-f9dc-ffffed57184a04d2"
             }
         },
-        "U:1c5b7014-03a3-f9e0-ffffed57184a04d2": {
+        "1c5b7014-03a3-f9e0-ffffed57184a04d2": {
             "name": "Sicherung 2",
             "type": "InfoOnlyDigital",
             "uuidAction": "1c5b7014-03a3-f9e0-ffffed57184a04d2",
@@ -1228,7 +1101,7 @@
                 "active": "1c5b7014-03a3-f9e0-ffffed57184a04d2"
             }
         },
-        "U:1c5b7a7c-03c3-da8c-ffffed57184a04d2": {
+        "1c5b7a7c-03c3-da8c-ffffed57184a04d2": {
             "name": "Zähler",
             "type": "Meter",
             "uuidAction": "1c5b7a7c-03c3-da8c-ffffed57184a04d2",
@@ -1284,7 +1157,7 @@
                 ]
             }
         },
-        "U:1c5ba0a2-0261-59f5-ffff2431706e73d8": {
+        "1c5ba0a2-0261-59f5-ffff2431706e73d8": {
             "name": "Zähler",
             "type": "Meter",
             "uuidAction": "1c5ba0a2-0261-59f5-ffff2431706e73d8",
@@ -1340,7 +1213,113 @@
                 ]
             }
         },
-        "U:1d310286-0150-924b-ffffed57184a04d2": {
+        "1d51eb8a-0264-8267-ffffed57184a04d2": {
+            "name": "AC Control Air",
+            "type": "AcControl",
+            "uuidAction": "1d51eb8a-0264-8267-ffffed57184a04d2",
+            "room": "15ea0aa5-0122-3bad-ffffed57184a04d2",
+            "cat": "15ea0aa4-0246-3a56-ffffed57184a04d2",
+            "defaultRating": 5,
+            "isFavorite": false,
+            "isSecured": false,
+            "restrictions": 0,
+            "details": {
+                "jLockable": true,
+                "type": 0,
+                "modes": [
+                    {
+                        "id": 1,
+                        "used": true
+                    },
+                    {
+                        "id": 2,
+                        "used": true
+                    },
+                    {
+                        "id": 3,
+                        "used": true
+                    },
+                    {
+                        "id": 4,
+                        "used": true
+                    },
+                    {
+                        "id": 5,
+                        "used": true
+                    }
+                ],
+                "airflow": [
+                    {
+                        "id": 2,
+                        "used": true
+                    },
+                    {
+                        "id": 3,
+                        "used": true
+                    },
+                    {
+                        "id": 4,
+                        "used": true
+                    },
+                    {
+                        "id": 5,
+                        "used": true
+                    },
+                    {
+                        "id": 7,
+                        "used": true
+                    }
+                ],
+                "fanspeed": [
+                    {
+                        "id": 1,
+                        "used": true
+                    },
+                    {
+                        "id": 2,
+                        "used": true
+                    },
+                    {
+                        "id": 3,
+                        "used": true
+                    },
+                    {
+                        "id": 4,
+                        "used": true
+                    },
+                    {
+                        "id": 5,
+                        "used": true
+                    },
+                    {
+                        "id": 6,
+                        "used": true
+                    },
+                    {
+                        "id": 7,
+                        "used": true
+                    }
+                ],
+                "connectedInputs": 0
+            },
+            "states": {
+                "jLocked": "9d51eb8a-0264-8255-02ffd5d696fb0e81",
+                "status": "1d51eb8a-0264-8260-0dffd5d696fb0e81",
+                "mode": "1d51eb8a-0264-8261-0effd5d696fb0e81",
+                "fan": "1d51eb8a-0264-8262-0fffd5d696fb0e81",
+                "ventMode": "1d51eb8a-0264-8263-10ffd5d696fb0e81",
+                "targetTemperature": "1d51eb8a-0264-8264-11ffd5d696fb0e81",
+                "temperature": "1d51eb8a-0264-8265-12ffd5d696fb0e81",
+                "pauseTime": "1d51eb8a-0264-825f-0cffd5d696fb0e81",
+                "operatingModes": "1d51eb8a-0264-824d-ffffd5d696fb0e81",
+                "fanspeeds": "1d51eb8a-0264-824f-ffffd5d696fb0e81",
+                "airflows": "1d51eb8a-0264-824e-ffffd5d696fb0e81",
+                "override": "1d51eb8a-0264-8250-ffffd5d696fb0e81",
+                "pauseUntil": "1d51eb8a-0264-8251-ffffd5d696fb0e81",
+                "pauseReason": "1d51eb8a-0264-8252-ffffd5d696fb0e81"
+            }
+        },
+        "1d310286-0150-924b-ffffed57184a04d2": {
             "name": "Leaf Lüfter",
             "type": "Ventilation",
             "uuidAction": "1d310286-0150-924b-ffffed57184a04d2",
@@ -1474,7 +1453,7 @@
                 "heatExchanger": "1d310286-0150-9246-19ff69b3e45a4c25"
             }
         },
-        "U:1d30f6e3-03a2-99e6-ffffed57184a04d2": {
+        "1d30f6e3-03a2-99e6-ffffed57184a04d2": {
             "name": "Status Monitor",
             "type": "StatusMonitor",
             "uuidAction": "1d30f6e3-03a2-99e6-ffffed57184a04d2",
@@ -1571,7 +1550,7 @@
                 "inputStates": "1d30f6e3-03a2-99d7-ffffb97e215496ae"
             }
         },
-        "U:1c5b710d-01ca-1133-ffffed57184a04d2": {
+        "1c5b710d-01ca-1133-ffffed57184a04d2": {
             "name": "Temperatur",
             "type": "InfoOnlyAnalog",
             "uuidAction": "1c5b710d-01ca-1133-ffffed57184a04d2",
@@ -1603,7 +1582,7 @@
                 ]
             }
         },
-        "U:1c5b72a2-00f7-2765-ffff504f94a1fda5": {
+        "1c5b72a2-00f7-2765-ffff504f94a1fda5": {
             "name": "Temperatur1",
             "type": "InfoOnlyAnalog",
             "uuidAction": "1c5b72a2-00f7-2765-ffff504f94a1fda5",
@@ -1623,29 +1602,129 @@
                 "error": "1c5b72a2-00f7-2764-01ffb3a72395bb46"
             }
         },
-        "U:1ceafcfc-01e4-108b-ffffed57184a04d2": {
-            "name": "Lampen AN",
-            "type": "Pushbutton",
-            "uuidAction": "1ceafcfc-01e4-108b-ffffed57184a04d2",
+        "1c5b743e-0398-4c3c-ffffed57184a04d2": {
+            "name": "Lichtsteuerung",
+            "type": "LightControllerV2",
+            "uuidAction": "1c5b743e-0398-4c3c-ffffed57184a04d2",
             "room": "15ea0aa5-0145-3c85-ffffed57184a04d2",
             "cat": "15ea0aa4-0244-3a4a-ffffed57184a04d2",
-            "defaultRating": 0,
+            "defaultRating": 1,
             "isFavorite": false,
             "isSecured": false,
-            "defaultIcon": null,
+            "presence": true,
             "restrictions": 0,
             "details": {
-                "jLockable": false,
-                "type": 71
+                "jLockable": true,
+                "controlHistory": true,
+                "hasHistory": 20,
+                "movementScene": 1,
+                "masterValue": "1c5b743e-0398-4c3c-ffffed57184a04d2/masterValue",
+                "masterColor": "1c5b743e-0398-4c3c-ffffed57184a04d2/masterColor"
             },
             "states": {
-                "active": "1ceafcfc-01e4-108b-ffffed57184a04d2"
+                "jLocked": "9c5b743e-0398-4bfc-07ffc50161f55067",
+                "activeMoods": "1c5b743e-0398-4bc3-ffffc50161f55067",
+                "moodList": "1c5b743e-0398-4bc4-ffffc50161f55067",
+                "activeMoodsNum": "1c5b743e-0398-4bcb-ffffc50161f55067",
+                "favoriteMoods": "1c5b743e-0398-4bc5-ffffc50161f55067",
+                "additionalMoods": "1c5b743e-0398-4bc6-ffffc50161f55067",
+                "circuitNames": "1c5b743e-0398-4bca-ffffc50161f55067",
+                "daylightConfig": "1c5b743e-0398-4bcc-ffffc50161f55067",
+                "presenceFrom": "1c5b743e-0398-4bc1-ffffc50161f55067",
+                "presenceTo": "1c5b743e-0398-4bc2-ffffc50161f55067"
             },
-            "links": [
-                "15ea0aa5-0148-3cb9-ffffed57184a04d2"
-            ]
+            "subControls": {
+                "1c5b743e-0398-4c3c-ffffed57184a04d2/masterValue": {
+                    "name": "Master-Helligkeit",
+                    "type": "Dimmer",
+                    "uuidAction": "1c5b743e-0398-4c3c-ffffed57184a04d2/masterValue",
+                    "defaultRating": 0,
+                    "isFavorite": false,
+                    "isSecured": false,
+                    "presence": true,
+                    "restrictions": 0,
+                    "states": {
+                        "position": "1c5b743e-0398-4c37-42ffc50161f55067",
+                        "min": "1c5b743e-0398-4bc8-ffffc50161f55067",
+                        "max": "1c5b743e-0398-4bc9-ffffc50161f55067",
+                        "step": "1c5b743e-0398-4c11-1cffc50161f55067"
+                    }
+                },
+                "1c5b743e-0398-4c3c-ffffed57184a04d2/masterColor": {
+                    "name": "Master-Farbe",
+                    "type": "ColorPickerV2",
+                    "uuidAction": "1c5b743e-0398-4c3c-ffffed57184a04d2/masterColor",
+                    "defaultRating": 0,
+                    "isFavorite": false,
+                    "isSecured": false,
+                    "presence": true,
+                    "restrictions": 0,
+                    "details": {
+                        "pickerType": "Rgb"
+                    },
+                    "states": {
+                        "color": "1c5b743e-0398-4c36-41ffc50161f55067",
+                        "sequence": "1c5b9b6d-03a4-c2c2-ffff8772cae9c18c",
+                        "sequenceColorIdx": "1c5b9b6d-03a5-c2d6-ffff8772cae9c18c"
+                    }
+                },
+                "1c5b743e-0398-4c3c-ffffed57184a04d2/AI1": {
+                    "name": "LED 1",
+                    "type": "ColorPickerV2",
+                    "uuidAction": "1c5b743e-0398-4c3c-ffffed57184a04d2/AI1",
+                    "defaultRating": 0,
+                    "isFavorite": false,
+                    "isSecured": false,
+                    "presence": true,
+                    "restrictions": 0,
+                    "details": {
+                        "pickerType": "Rgb"
+                    },
+                    "states": {
+                        "color": "1c5b743e-0398-4c24-2fffc50161f55067",
+                        "sequence": "1c5b9b6d-03a4-c2b0-ffff8772cae9c18c",
+                        "sequenceColorIdx": "1c5b9b6d-03a4-c2c4-ffff8772cae9c18c"
+                    }
+                },
+                "1c5b743e-0398-4c3c-ffffed57184a04d2/AI2": {
+                    "name": "LED 2",
+                    "type": "ColorPickerV2",
+                    "uuidAction": "1c5b743e-0398-4c3c-ffffed57184a04d2/AI2",
+                    "defaultRating": 0,
+                    "isFavorite": false,
+                    "isSecured": false,
+                    "presence": true,
+                    "restrictions": 0,
+                    "details": {
+                        "pickerType": "Rgb"
+                    },
+                    "states": {
+                        "color": "1c5b743e-0398-4c25-30ffc50161f55067",
+                        "sequence": "1c5b9b6d-03a4-c2b1-ffff8772cae9c18c",
+                        "sequenceColorIdx": "1c5b9b6d-03a4-c2c5-ffff8772cae9c18c"
+                    }
+                },
+                "1c5b743e-0398-4c3c-ffffed57184a04d2/AI3": {
+                    "name": "LED 3",
+                    "type": "ColorPickerV2",
+                    "uuidAction": "1c5b743e-0398-4c3c-ffffed57184a04d2/AI3",
+                    "defaultRating": 0,
+                    "isFavorite": false,
+                    "isSecured": false,
+                    "presence": true,
+                    "restrictions": 0,
+                    "details": {
+                        "pickerType": "Rgb"
+                    },
+                    "states": {
+                        "color": "1c5b743e-0398-4c26-31ffc50161f55067",
+                        "sequence": "1c5b9b6d-03a4-c2b2-ffff8772cae9c18c",
+                        "sequenceColorIdx": "1c5b9b6d-03a4-c2c6-ffff8772cae9c18c"
+                    }
+                }
+            }
         },
-        "U:1d3107d0-0225-9658-ffffed57184a04d2": {
+        "1d3107d0-0225-9658-ffffed57184a04d2": {
             "name": "Power Supply & Backup",
             "type": "PowerUnit",
             "uuidAction": "1d3107d0-0225-9658-ffffed57184a04d2",
@@ -1702,7 +1781,7 @@
                         "entries": "1d3107d0-0225-9646-ffff86bb593c1103"
                     }
                 },
-                "U:1d3107d0-0244-9cd4-ffff6203a1f55e22": {
+                "1d3107d0-0244-9cd4-ffff6203a1f55e22": {
                     "name": "Power Supply & Backup-Total",
                     "type": "Meter",
                     "uuidAction": "1d3107d0-0244-9cd4-ffff6203a1f55e22",
@@ -1733,7 +1812,7 @@
                 }
             }
         },
-        "U:15ea0aa5-0148-3cb9-ffffed57184a04d2": {
+        "15ea0aa5-0148-3cb9-ffffed57184a04d2": {
             "name": "Internetverbindung",
             "type": "InfoOnlyDigital",
             "uuidAction": "15ea0aa5-0148-3cb9-ffffed57184a04d2",
@@ -1925,16 +2004,6 @@
         }
     },
     "times": {
-        "233": {
-            "id": 233,
-            "name": "Unix Timestamp",
-            "analog": true
-        },
-        "238": {
-            "id": 238,
-            "name": "Nacht",
-            "analog": false
-        },
         "266": {
             "id": 266,
             "name": "Tage seit 2009",
@@ -2084,6 +2153,16 @@
             "id": 299,
             "name": "Impuls Abenddämmerung",
             "analog": false
+        },
+        "233": {
+            "id": 233,
+            "name": "Unix Timestamp",
+            "analog": true
+        },
+        "238": {
+            "id": 238,
+            "name": "Nacht",
+            "analog": false
         }
     },
     "caller": {
@@ -2131,7 +2210,7 @@
         }
     },
     "autopilot": {
-        "U:15ea0aa4-0206-3a35-ffffed57184a04d2": {
+        "15ea0aa4-0206-3a35-ffffed57184a04d2": {
             "name": "Automatik-Regeln",
             "uuidAction": "15ea0aa4-0206-3a35-ffffed57184a04d2",
             "states": {
@@ -2141,7 +2220,7 @@
         }
     },
     "messageCenter": {
-        "U:15ea0aa4-0221-3a3b-ffffed57184a04d2": {
+        "15ea0aa4-0221-3a3b-ffffed57184a04d2": {
             "name": "Systemstatus",
             "uuidAction": "15ea0aa4-0221-3a3b-ffffed57184a04d2",
             "states": {
