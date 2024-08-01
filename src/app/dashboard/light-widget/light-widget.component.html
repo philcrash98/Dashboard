@@ -33,18 +33,18 @@
     </mat-list>
     <mat-divider></mat-divider>
     <div class="containerhorizontal">
-      <button mat-fab extended>
+      <button mat-fab extended (click)="inccounter()">
         <mat-icon>add</mat-icon>
         Mode
       </button>
-      <div>
-        {{Mode}}
+      <div class="counter">
+        <h2>{{Mode}}</h2>
       </div>
-      <button mat-fab extended >
+      <button mat-fab extended (click)="deccounter()">
         <mat-icon>remove</mat-icon>
         Mode
       </button>
-      <button mat-fab extended>
+      <button mat-fab extended (click)="alarm()">
         <mat-icon>warning</mat-icon>
         Alarm
       </button>

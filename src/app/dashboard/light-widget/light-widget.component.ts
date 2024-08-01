@@ -58,7 +58,7 @@ export class LightWidgetComponent {
   //red 1ceb08a2-0229-2ae7-08ff4cd81f7b0015
   //green 1ceb08a2-0229-2ae8-09ff4cd81f7b0015
   //blue 1ceb08a2-0229-2ae9-0aff4cd81f7b0015
-  //color1ceb08a2-0229-2aeb-0cff4cd81f7b0015
+  //color 1ceb08a2-0229-2aeb-0cff4cd81f7b0015
 
 
 
@@ -136,8 +136,30 @@ export class LightWidgetComponent {
     }
 
   }
+  deccounter() {
+    if (this.Mode > 0) {
+      this.Mode--
+    }
+    else{
+      this.Mode = 99;
+    }
+    this.senddata("Lico","mode", this.Mode.toString())
+
+  }
+  inccounter() {
+    if (this.Mode < 99) {
+      this.Mode++
+    }
+    else{
+      this.Mode = 0;
+    }
+    this.senddata("Lico","mode", this.Mode.toString())
 
 
-
+  }
+  alarm() {
+    this.senddata("Lico","mode", this.Mode.toString())
+    }
+    
 
 }
