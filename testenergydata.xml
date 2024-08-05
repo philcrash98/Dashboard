@@ -1,0 +1,6 @@
+<Statistics Name="Power Supply & Backup-Total" StatsGroup="1" NumOutputs="1" Outputs="actual">
+<S T="2009-01-01 01:30:00" V="0.002"/>
+<S T="2009-01-01 02:00:00" V="0.002"/>
+<S T="2009-01-01 02:30:00" V="0.002"/>
+<S T="2009-01-01 03:00:00" V="0.002"/>
+</Statistics>

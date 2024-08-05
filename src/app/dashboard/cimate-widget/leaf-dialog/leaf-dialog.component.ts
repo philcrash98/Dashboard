@@ -26,7 +26,7 @@ export class LeafDialogComponent {
     throw new Error('Method not implemented.');
   }
   sendData(status: string, value: string) {
-    this.dataService.setstate("ACc", status, value).subscribe(
+    this.dataService.setstate("Lv", status, value, "APIControl").subscribe(
       response => { },
       error => {
         console.error('Error:', error);

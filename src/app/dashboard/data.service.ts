@@ -8,15 +8,15 @@ import { catchError, Observable, retry, throwError, EMPTY } from 'rxjs';
 export class DataService {
   private baseUrl = 'http://192.168.188.24/jdev/sps/io';
   private statusUrl = 'http://192.168.188.24/jdev/sps/enablebinstatusupdate';
-  dev = true;
+  dev = false;
 
   constructor(private http: HttpClient) { }
 
-  setstate(functionBlock: string, input: string, value: string): Observable<any> {
+  setstate(functionBlock: string, input: string, value: string, vi: string): Observable<any> {
     if (this.dev) {
       return EMPTY;
     } else {
-      const url = `${this.baseUrl}/APIControl/SET(${functionBlock};${input};${value})`;
+      const url = `${this.baseUrl}/${vi}/SET(${functionBlock};${input};${value})`;
       const headers = new HttpHeaders({
         'Authorization': 'Basic ' + btoa('admin:DiEng2024')
       });
@@ -27,8 +27,24 @@ export class DataService {
         catchError(this.handleError) // then handle the error
       );
     }
+    
 
+  }
+  setuuid(uuid: string, cmd: string){
+    if (this.dev) {
+      return EMPTY;
+    } else {
+      const url = `${this.baseUrl}/${uuid}/${cmd}`;
+      console.log(url)
+      const headers = new HttpHeaders({
+        'Authorization': 'Basic ' + btoa('admin:DiEng2024')
+      });
 
+      return this.http.get(url, { headers }).pipe(
+        // retry a failed request up to 3 times
+        catchError(this.handleError) // then handle the error
+      );
+    }
   }
   getstate(uuid: string): Observable<any> {
     if (this.dev) {
